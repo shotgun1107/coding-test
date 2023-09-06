@@ -1,0 +1,1 @@
+print(*[i - int(x) for i, x in zip([1, 1, 2, 2, 2, 8], input().split())])
