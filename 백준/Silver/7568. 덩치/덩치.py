@@ -1,22 +1,14 @@
-from collections import deque
-
+n = int(input())
 ls = []
-for _ in range(int(input())):
-    ls.append(list(map(int, input().split())))
 
-ls = deque(ls)
+for _ in range(n):
+    x, y = map(int, input().split())
+    ls.append((x, y))
 
-n = len(ls)
-answer = [0 for i in range(n)]
+answer = [0] * n
 
 for i in range(n):
-    n1 = ls.popleft()
-    x,y = n1
-    for j in ls:
-        x1 , y1 = j
-        if x < x1 and y < y1:
-            answer[i] += 1
-    answer[i] += 1
-    ls.append(n1)
+    x, y = ls[i]
+    answer[i] = sum(1 for j in ls if x < j[0] and y < j[1])+1
 
 print(*answer)
