@@ -1,0 +1,1 @@
+print(280 if not 12 <= (s := [*map(int,input().split())] )[0] <= 16 or s[1] == 1 else 320)
