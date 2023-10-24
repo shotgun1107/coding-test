@@ -1,0 +1,1 @@
+print(2 if '7' in str(num:= int(input())) and num % 7 != 0 else 3 if '7' in str(num) else 0 if num % 7 != 0 else 1)
