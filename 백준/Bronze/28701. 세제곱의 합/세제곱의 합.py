@@ -1,0 +1,1 @@
+print(s := sum([i for i in range(1,int(input()) + 1)]) , s**2,s**2,sep='\n')
