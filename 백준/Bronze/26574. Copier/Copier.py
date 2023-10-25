@@ -1,0 +1,1 @@
+print('\n'.join([f'{(s := input())} {s}' for _ in range(int(input()))]))
