@@ -1,0 +1,1 @@
+print('V'*( ( s := int(input()))// 5 ) , 'I' * (s%5),sep='')
