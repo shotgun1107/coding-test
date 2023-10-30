@@ -1,0 +1,1 @@
+print([1,2,3][int(int((n := int(input())) > 2)+ int(n > 5))])
