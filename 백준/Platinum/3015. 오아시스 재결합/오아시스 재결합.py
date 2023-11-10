@@ -1,3 +1,6 @@
+import sys
+input = sys.stdin.readline
+
 n = int(input())
 ls = [int(input()) for _ in range(n)]
 
@@ -25,3 +28,5 @@ for i in ls:
     else:
         stack.append((i,cnt))
 print(answer)
+# ls = "7 7 8 6 5 3 7 4 7 7 10 6 1 2".replace(' ','\n')
+# print(ls)
