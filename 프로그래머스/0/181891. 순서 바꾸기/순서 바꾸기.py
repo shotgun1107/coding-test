@@ -1,0 +1,1 @@
+solution = lambda  x,n :  x[n:]+x[:n]
