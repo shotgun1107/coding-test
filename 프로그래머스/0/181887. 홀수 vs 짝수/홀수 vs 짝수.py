@@ -1,0 +1,1 @@
+solution = lambda ls : max(sum(ls[::2]),sum(ls[1::2]))
