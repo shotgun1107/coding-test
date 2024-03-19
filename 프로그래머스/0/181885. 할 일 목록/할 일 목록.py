@@ -1,0 +1,1 @@
+solution = lambda ls,check : [i for i,j in zip(ls,check) if not j]
