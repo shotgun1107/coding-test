@@ -1,0 +1,1 @@
+solution = lambda ls : [i for i in ls if not 'ad' in i]
