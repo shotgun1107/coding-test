@@ -1,0 +1,1 @@
+solution = lambda s,p : int(p in s.replace('A','1').replace('B','2').replace('1','B').replace('2','A'))
