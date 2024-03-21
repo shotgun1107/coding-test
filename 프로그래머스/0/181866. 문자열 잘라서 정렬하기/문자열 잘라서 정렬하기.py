@@ -1,0 +1,1 @@
+solution = lambda ls : sorted([i for i in ls.split('x') if not i == ''])
