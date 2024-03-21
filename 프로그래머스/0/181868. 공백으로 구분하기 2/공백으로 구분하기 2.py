@@ -1,0 +1,1 @@
+solution = lambda ls : list(ls.split())
