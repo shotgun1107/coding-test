@@ -1,0 +1,1 @@
+solution = lambda rank , attendance :  10000 * (ls := [rank.index(i) for i in sorted([j for j,c in zip(rank,attendance) if c])][:3])[0] + 100 * ls[1] + ls[2]
