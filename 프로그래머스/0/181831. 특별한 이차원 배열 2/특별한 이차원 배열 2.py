@@ -1,0 +1,1 @@
+solution = lambda ls : int(all([ls[i][j] == ls[j][i] for i in range(len(ls)) for j in range(len(ls))]))
