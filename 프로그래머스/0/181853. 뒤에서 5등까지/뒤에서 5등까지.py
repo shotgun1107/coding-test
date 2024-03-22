@@ -1,0 +1,1 @@
+solution = lambda ls : sorted(ls)[:5]
