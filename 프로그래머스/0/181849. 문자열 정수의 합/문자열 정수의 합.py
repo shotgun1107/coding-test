@@ -1,0 +1,1 @@
+solution = lambda ls : sum(int(c) for c in ls)  
