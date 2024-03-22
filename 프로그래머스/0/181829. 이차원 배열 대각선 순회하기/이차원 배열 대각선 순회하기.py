@@ -1,0 +1,1 @@
+solution = lambda board,k : sum([board[i][j] for i in range(min(k + 1, len(board))) for j in range(min(k + 1 - i, len(board[i])))])
