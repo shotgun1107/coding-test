@@ -1,0 +1,1 @@
+solution = lambda ls , s: ''.join([i for i in ls if not s in i]) 
