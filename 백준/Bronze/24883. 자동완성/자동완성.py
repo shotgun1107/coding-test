@@ -1,0 +1,1 @@
+print('Naver D2' if input() in ['n','N'] else 'Naver Whale')
