@@ -1,3 +1,7 @@
+import sys
+
+input = sys.stdin.readline
+
 N, Q = map(int, input().split())
 
 base = "SciComLove"
