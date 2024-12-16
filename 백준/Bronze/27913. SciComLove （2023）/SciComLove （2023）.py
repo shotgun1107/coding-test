@@ -1,14 +1,18 @@
-N,Q = map(int,input().split())
-s = list(("SciComLove"*(2*(10**4)))[:N])
+N, Q = map(int, input().split())
+
+base = "SciComLove"
+s = list((base * (N // len(base) + 1))[:N])
+
+c = sum(1 for c in s if c.isupper())
 
 for _ in range(Q):
     i = int(input())
-    if s[i-1].isupper():
-        s[i-1] = s[i-1].lower()
+    i -= 1
+
+    if s[i].isupper():
+        c -= 1
+        s[i] = s[i].lower()
     else:
-        s[i-1] = s[i-1].upper()
-    c = 0
-    for i in s:
-        if i.isupper():
-            c += 1
+        c += 1
+        s[i] = s[i].upper()
     print(c)
