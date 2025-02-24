@@ -1,0 +1,1 @@
+print(*[f'${(float(input()) * 80) / 100:.2f}' for _ in range(int(input()))], sep='\n')
