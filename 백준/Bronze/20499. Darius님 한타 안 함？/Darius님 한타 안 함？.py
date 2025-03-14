@@ -1,0 +1,1 @@
+print('hasu' if (ls :=list(map(int,input().split('/'))))[1] == 0 or ls[0]+ls[2] < ls[1] else 'gosu')
