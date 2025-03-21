@@ -3,4 +3,4 @@ print("I'm a winner!" if (sum([{
     'I': 1, 'J': 1, 'K': 3, 'L': 1, 'M': 3, 'N': 3, 'O': 1, 'P': 2,
     'Q': 2, 'R': 2, 'S': 1, 'T': 2, 'U': 1, 'V': 1, 'W': 2, 'X': 2,
     'Y': 2, 'Z': 1
-}[i] for i in input()]) % 10) % 2 else "You're the winner?" )
+}[i] for i in input()])) % 2 else "You're the winner?" )
