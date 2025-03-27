@@ -1,0 +1,1 @@
+print(n1 if (n1 := sum(map(int,(n := open(0).read().split())[:2]))) < int(n[-1])*2 else n1 - int(n[-1])*2)
