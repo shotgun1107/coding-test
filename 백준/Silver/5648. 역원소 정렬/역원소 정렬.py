@@ -1,0 +1,1 @@
+print(*sorted([int(i[::-1]) for i in list(open(0).read().split())[1:]]),sep='\n')
