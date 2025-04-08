@@ -1,0 +1,1 @@
+print('LUCKY' if sum((s := list(map(int,input())))[:len(s)//2]) == sum(s[len(s)//2:]) else 'READY')
