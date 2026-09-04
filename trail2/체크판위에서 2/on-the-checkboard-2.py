@@ -1,27 +1,29 @@
 R, C = map(int, input().split())
 
-grid = [list(input().split()) for _ in range(R)]
+first_row = input().split()
+start = first_row[0]
 
-start = grid[0][0]
-end = grid[R - 1][C - 1]
+col = [0] * C
 ans = 0
 
-if start != end:
+for r in range(1, R - 1):
+    row = input().split()
+    prefix = 0
+
     for c in range(1, C - 1):
-        grid[0][c] = 0
+        old = col[c]
 
-    for r in range(1, R - 1):
-        prefix = 0
+        if row[c] == start:
+            ans += prefix
 
-        for c in range(1, C - 1):
-            cur = grid[r][c]
+        prefix += old
 
-            if cur == start:
-                ans += prefix
+        if row[c] != start:
+            col[c] += 1
 
-            prefix += grid[0][c]
+last_row = input().split()
 
-            if cur != start:
-                grid[0][c] += 1
+if last_row[-1] == start:
+    ans = 0
 
 print(ans)
