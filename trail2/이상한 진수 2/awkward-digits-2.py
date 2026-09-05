@@ -1,0 +1,1 @@
+print(int(a:=input(),2)^(1<<(len(a)-1-(a.find('0') if '0' in a else len(a)-1))))
